@@ -35,12 +35,12 @@ export function Navigation() {
               Trang chủ
             </Link>
             <Link
-              href="/about"
+              href="/apartments"
               className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive("/about") ? "text-primary" : "text-muted-foreground"
+                isActive("/apartments") ? "text-primary" : "text-muted-foreground"
               }`}
             >
-              Giới thiệu
+              Căn hộ
             </Link>
             <Link
               href="/contact"

@@ -90,7 +90,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="relative animate-in fade-in slide-in-from-right-8 duration-700 delay-200">
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <div>
                     <ImageGallery images={galleryImages} />
                   </div>
                   {/* Floating Stats */}
@@ -113,7 +113,7 @@ export default function HomePage() {
           <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
               <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold">Về Sunrise Tower</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary">Về Sunrise Tower</h2>
                 <p className="text-lg text-muted-foreground text-pretty">
                   Không gian sống hiện đại, tiện nghi đầy đủ và dịch vụ quản lý chuyên nghiệp
                 </p>
@@ -197,91 +197,6 @@ export default function HomePage() {
                   Hệ thống quản lý chuyên nghiệp, bảo vệ 24/7, camera an ninh toàn bộ khu vực, cùng đội ngũ nhân viên
                   tận tâm luôn sẵn sàng phục vụ cư dân.
                 </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="py-20 bg-muted/30">
-            <div className="container mx-auto px-4">
-              <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold">Tiện ích nổi bật</h2>
-                <p className="text-lg text-muted-foreground text-pretty">
-                  Đầy đủ tiện nghi phục vụ nhu cầu sinh hoạt và giải trí của cư dân
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <Card className="border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Waves className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Hồ bơi</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Hồ bơi ngoài trời rộng 500m² với khu vực dành riêng cho trẻ em
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-secondary/10 flex items-center justify-center">
-                      <Dumbbell className="h-6 w-6 text-secondary" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Phòng gym</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Phòng tập gym hiện đại với đầy đủ thiết bị và huấn luyện viên chuyên nghiệp
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-accent/10 flex items-center justify-center">
-                      <Car className="h-6 w-6 text-accent" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Bãi đỗ xe</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Hầm đỗ xe rộng rãi, an toàn với hệ thống quản lý thông minh
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-chart-4/10 flex items-center justify-center">
-                      <ShoppingBag className="h-6 w-6 text-chart-4" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Trung tâm thương mại</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Khu mua sắm, ăn uống và giải trí ngay tại tầng trệt
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-chart-5/10 flex items-center justify-center">
-                      <Trees className="h-6 w-6 text-chart-5" />
-                    </div>
-                    <h3 className="text-xl font-semibold">Vườn cây xanh</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Khu vườn xanh mát, không gian thư giãn và vui chơi cho gia đình
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-border/50 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                  <CardContent className="p-6 space-y-4">
-                    <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <Wifi className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold">WiFi miễn phí</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Internet tốc độ cao miễn phí tại khu vực công cộng
-                    </p>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </section>
@@ -372,126 +287,6 @@ export default function HomePage() {
                     <p className="text-muted-foreground leading-relaxed">
                       Kiến trúc linh hoạt, dễ dàng thêm tính năng mới và tích hợp với các hệ thống khác.
                     </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-          </section>
-
-          <section id="contact" className="py-20 bg-muted/30">
-            <div className="container mx-auto px-4">
-              <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-                <h2 className="text-3xl md:text-4xl font-bold">Liên hệ với chúng tôi</h2>
-                <p className="text-lg text-muted-foreground text-pretty">
-                  Để được tư vấn chi tiết về căn hộ và dịch vụ, vui lòng liên hệ với chúng tôi
-                </p>
-              </div>
-
-              <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                {/* Contact Info */}
-                <div className="space-y-8">
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-6">Thông tin liên hệ</h3>
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-4">
-                        <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <MapPin className="h-5 w-5 text-primary" />
-                        </div>
-                        <div>
-                          <p className="font-medium mb-1">Địa chỉ</p>
-                          <p className="text-muted-foreground">123 Đường Lê Lợi, Quận 1, TP. Hồ Chí Minh</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <Phone className="h-5 w-5 text-primary" />
-                        </div>
-                        <div>
-                          <p className="font-medium mb-1">Điện thoại</p>
-                          <p className="text-muted-foreground">(028) 1234 5678</p>
-                          <p className="text-muted-foreground">Hotline: 0901 234 567</p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-4">
-                        <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          <Mail className="h-5 w-5 text-primary" />
-                        </div>
-                        <div>
-                          <p className="font-medium mb-1">Email</p>
-                          <p className="text-muted-foreground">info@sunrisetower.vn</p>
-                          <p className="text-muted-foreground">support@sunrisetower.vn</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-card p-6 rounded-xl border border-border/50">
-                    <h4 className="font-semibold mb-4">Giờ làm việc</h4>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Thứ 2 - Thứ 6:</span>
-                        <span className="font-medium">8:00 - 18:00</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Thứ 7:</span>
-                        <span className="font-medium">8:00 - 12:00</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Chủ nhật:</span>
-                        <span className="font-medium">Nghỉ</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Contact Form */}
-                <Card className="border-border/50">
-                  <CardContent className="p-6">
-                    <form className="space-y-6">
-                      <div className="space-y-2">
-                        <label htmlFor="name" className="text-sm font-medium">
-                          Họ và tên <span className="text-destructive">*</span>
-                        </label>
-                        <Input id="name" placeholder="Nhập họ và tên của bạn" required />
-                      </div>
-
-                      <div className="grid sm:grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <label htmlFor="email" className="text-sm font-medium">
-                            Email <span className="text-destructive">*</span>
-                          </label>
-                          <Input id="email" type="email" placeholder="email@example.com" required />
-                        </div>
-
-                        <div className="space-y-2">
-                          <label htmlFor="phone" className="text-sm font-medium">
-                            Số điện thoại <span className="text-destructive">*</span>
-                          </label>
-                          <Input id="phone" type="tel" placeholder="0901 234 567" required />
-                        </div>
-                      </div>
-
-                      <div className="space-y-2">
-                        <label htmlFor="subject" className="text-sm font-medium">
-                          Tiêu đề
-                        </label>
-                        <Input id="subject" placeholder="Tư vấn về căn hộ" />
-                      </div>
-
-                      <div className="space-y-2">
-                        <label htmlFor="message" className="text-sm font-medium">
-                          Nội dung <span className="text-destructive">*</span>
-                        </label>
-                        <Textarea id="message" placeholder="Nhập nội dung cần tư vấn..." rows={5} required />
-                      </div>
-
-                      <Button type="submit" size="lg" className="w-full group">
-                        Gửi tin nhắn
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Button>
-                    </form>
                   </CardContent>
                 </Card>
               </div>
